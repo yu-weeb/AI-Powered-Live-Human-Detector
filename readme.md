@@ -1,5 +1,10 @@
+Link to Models:
+https://drive.google.com/drive/folders/1tqtylyEl9Mxv-gyoAigldRZxanlapAgD?usp=sharing
+
+
+
 Thermal Human Detection – YOLOv5 + Body-Part Ensemble
-Overview
+Overview-
 
 This project performs real-time human detection on thermal images using a two-model YOLOv5 ensemble. Instead of relying on one detector, the system splits the task into:
 
@@ -27,7 +32,7 @@ The body-part model provides fallback detections when only small visible regions
 
 The system merges results so detection succeeds even under occlusion.
 
-Models Used
+Models Used-
 
 1. YOLOv5 (Human Detector)
 
@@ -64,7 +69,7 @@ Reduce false negatives under heavy occlusion
 
 This step is optional and can be toggled off for performance.
 
-Pipeline
+Pipeline-
 
 Capture or load thermal frame
 
@@ -86,7 +91,7 @@ Data augmentation: flips, noise, random masks
 
 Custom anchor tuning for smaller body parts
 
-Requirements
+Requirements-
 
 Python 3.x
 
@@ -98,7 +103,7 @@ YOLOv5 environment
 
 (Optional) GAN inpainting dependencies
 
-Results
+Results-
 
 Faster than heavy backbone detectors
 
@@ -106,5 +111,4 @@ More reliable in low-detail thermal conditions
 
 Partial visibility no longer causes total detection failure
 
-Link to Models:
-https://drive.google.com/drive/folders/1tqtylyEl9Mxv-gyoAigldRZxanlapAgD?usp=sharing
+
